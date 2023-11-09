@@ -1,0 +1,10 @@
+class Solution:
+  def isHappyNumber(n):
+  st=set()
+  while (1):
+    n = numSquareSum(n)
+    if (n == 1):
+      return True
+    if n not in st:
+      return False
+    st.insert(n)
